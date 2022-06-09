@@ -1,3 +1,6 @@
+'''
+this is test,thank you!
+'''
 def outer(a):
     b = 10
     # inner是内函数
