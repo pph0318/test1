@@ -6,13 +6,16 @@
         output 'B??C' 
 '''
 def replaceBlank(inputs):
-    
-    pass
+    lists = list(inputs)
+    for i in range(len(lists)):
+        if lists[i] == ' ':
+            lists[i] = '??'
+    new_strs = ''.join(lists)
+    return new_strs
 
 
 if __name__ == "__main__":
-    strs = 'B C'
-    for i in strs:
-        print(i)
-    # print(strs)
-    pass
+    strs = 'B C A '
+    new = replaceBlank(strs)
+    print(new)
+    
